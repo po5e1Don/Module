@@ -441,14 +441,27 @@ h1 {
 
 .all_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .all_list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.daily {
+
+.green_box {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.green_box::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #99ca3c;
+  left: 10%;
+  bottom: -22px;
 }
 
 .txt_dec {
@@ -485,8 +498,64 @@ h1 {
   font-size: 50px;
 }
 
+.txt_decor {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.txt_decor:hover {
+  color: #99ca3c;
+}
+
+.box {
+  padding-bottom: 15px;
+}
+
+.box:nth-child(2) {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.box:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #99ca3b;
+  bottom: 18px;
+  left: 10%;
+}
+
+.dwnld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b3564;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lora", sans-serif;
+  padding: 4px 7px;
+}
+
+.t_txt {
+  font-size: 16px;
+}
+.m_txt {
+  font-size: 20px;
+}
+.b_txt {
+  font-size: 15px;
+}
+
+.two_columns {
+  display: flex;
+}
+
 .events {
   display: flex;
+  padding-left: 30px;
+  width: 63%;
 }
 
 .ev_col {
@@ -516,6 +585,7 @@ h1 {
 .name {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 .name a {
   font-size: 25px;
@@ -597,7 +667,7 @@ h1 {
   color: #99ca3c;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -640,4 +710,4 @@ h1 {
     left: auto;
     margin-left: 20px;
   }
-}
+} */
