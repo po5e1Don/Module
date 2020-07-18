@@ -667,6 +667,93 @@ h1 {
   color: #99ca3c;
 }
 
+.menu_and_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+.menu_hor {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.tel_f {
+  font-family: "Lora";
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+.tel_f a {
+  color: #1b3564;
+  text-decoration: none;
+}
+
+.tel_f a:hover {
+  color: #99ca3b;
+}
+
+.btn_menu {
+  padding-right: 30px;
+  font-size: 18px;
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn_menu a {
+  color: #1b3564;
+  text-decoration: none;
+}
+.btn_menu a:hover {
+  color: #99ca3b;
+}
+.wrap {
+  width: 100%;
+}
+
+.four_col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big_menu {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.big_menu li {
+  padding: 5px 0;
+}
+.big_menu li a {
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #868786;
+  font-size: 16px;
+  padding-right: 20px;
+}
+.big_menu li a:hover {
+  color: #99ca3c;
+}
+
+.frst_link {
+  padding: 0 50px 10px 0px;
+  font-family: "Fira Sans Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #99ca3c;
+  transition: color 0.5s;
+}
+.frst_link:hover {
+  color: #1c3564;
+}
+
 /* @media (min-width: 768px) {
   .container {
     width: 100%;
