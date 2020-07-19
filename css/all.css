@@ -754,47 +754,44 @@ h1 {
   color: #1c3564;
 }
 
-/* @media (min-width: 768px) {
-  .container {
+@media (max-width: 768px) {
+  .image_text {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .two_photo {
+    flex-direction: column;
+  }
+  .care_photo {
+    margin-bottom: 20px;
+  }
+
+  .text_today h2 {
+    text-align: center;
+  }
+  .two_columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .events {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
   }
-  .logo img {
-    width: 128px;
+  .menu {
+    padding-left: 30px;
   }
-  .menu_btn_top {
-    font-size: 16px;
+  .logo_get_started {
+    width: 100%;
   }
-  .number {
-    font-size: 18px;
+  .get_txt {
+    width: 100%;
   }
-  .menu_btn_bottom {
-    font-size: 19px;
+  .menu_and_logo {
+    flex-direction: column-reverse;
   }
-  .link_btn {
-    font-size: 16px;
-  }
-  .img_txt {
-    justify-content: space-between;
-  }
-  .logo_get_started img {
-    width: 128px;
+  .menu_and_logo img {
+    position: relative;
+    top: 50%;
+    left: 50%;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .menu_btn_top {
-    display: none;
-  }
-  .menu_bottom {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    position: relative;
-    left: auto;
-    margin-left: 20px;
-  }
-} */
