@@ -140,7 +140,7 @@ body {
 
 .menu_btn_bottom {
   font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .menu_btn_bottom:hover .submenu {
@@ -259,7 +259,7 @@ body {
 
 .arrow_down {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   background-color: #fff;
   width: 40px;
@@ -754,16 +754,83 @@ h1 {
   color: #1c3564;
 }
 
+.fb_adress {
+  display: flex;
+  justify-content: start;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.fb {
+  margin-right: 15px;
+}
+.icon-facebook:before {
+  content: "\ea90";
+  font-size: 20px;
+  color: #868786;
+}
+.icon-facebook:hover::before {
+  color: #1c3564;
+}
+
+.fb_link {
+  text-decoration: none;
+}
+.fb_link:hover {
+  text-decoration: none;
+  color: #1c3564;
+}
+
+.address {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #868786;
+}
+
 @media (max-width: 768px) {
+  .logo img {
+    position: relative;
+    width: 50%;
+  }
+
   .menu_area {
+    top: 25%;
     display: none;
     position: absolute;
-    top: 46%;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     background-color: #99ca3b;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
   }
+  .submenu {
+    position: relative;
+    width: 100%;
+  }
+  .sub_menu_btn a {
+    font-size: 12px;
+  }
+
+  .menu_top {
+    justify-content: flex-start;
+  }
+
+  .menu_btn_bottom {
+    font-size: 14px;
+  }
+
   #checker:checked ~ .menu_area {
     display: flex;
     justify-content: center;
@@ -787,6 +854,13 @@ h1 {
     left: 10px;
   }
 
+  .block_right {
+    width: 100%;
+    padding: 0;
+  }
+  .arrow_down {
+    display: none;
+  }
   .xl_text {
     font-size: 14px;
   }
@@ -817,22 +891,25 @@ h1 {
   .care_photo {
     margin-bottom: 20px;
   }
+  .second_text {
+    font-size: 30px;
+  }
 
   .text_today h2 {
     text-align: center;
   }
   .two_columns {
     display: flex;
-
+    flex-direction: column;
     align-items: center;
   }
   .events {
     width: 100%;
-    padding-right: 10px;
+    justify-content: center;
   }
 
   .menu {
-    padding-left: 30px;
+    justify-content: center;
   }
 
   .left_image img {
@@ -894,5 +971,54 @@ h1 {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .fb_adress {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .arrow_down {
+    display: none;
+  }
+
+  .events {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+  }
+  .frst_col {
+    display: block;
+  }
+  .menu_btn_top {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .menu_btn_bottom {
+    font-size: 20px;
+  }
+  .menu_btn_bottom a {
+    padding-left: 27px;
+  }
+  .number {
+    font-size: 20px;
+  }
+  .img_care img {
+    width: 100%;
+  }
+  .logo_footer img {
+    width: 100%;
+  }
+
+  .btn_menu {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .two_columns {
+    display: flex;
+    width: 100%;
+  }
+  .fb_adress {
+    justify-content: start;
   }
 }
