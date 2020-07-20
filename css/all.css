@@ -806,15 +806,16 @@ h1 {
     width: 50%;
   }
 
+  .number a {
+    font-size: 18px;
+  }
+
+  .menu_btn_top {
+    font-size: 16px;
+  }
+
   .menu_area {
-    top: 25%;
     display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #99ca3b;
-    width: 100%;
-    z-index: 99;
   }
   .submenu {
     position: relative;
@@ -834,8 +835,15 @@ h1 {
   }
 
   #checker:checked ~ .menu_area {
+    top: 26%;
     display: flex;
-    justify-content: space-evenly;
+    position: absolute;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    background-color: #99ca3b;
+    width: 100%;
+    z-index: 99;
   }
   .burger {
     display: block;
@@ -864,10 +872,10 @@ h1 {
     display: none;
   }
   .xl_text {
-    font-size: 14px;
+    font-size: 16px;
   }
   .sm_text {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .arrow_down {
